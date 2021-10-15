@@ -1,16 +1,82 @@
-html,
-body {
+
+
+
+
+
+@font-face {
+  font-family: heading;
+  src: url("../assets/fonts/RobotoSlab/static/RobotoSlab-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: tbody;
+  src: url("../assets/fonts/OpenSans/static/OpenSans/OpenSans-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: tsemibold;
+  src: url("../assets/fonts/OpenSans/static/OpenSans/OpenSans-SemiBold.ttf") format('truetype');
+}
+
+
+
+*,
+::before,
+::after {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: inherit;
+
+}
+::selection { 
+  background: rgba(black,.5); 
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+
+html { 
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-* {
+
+body {
+  font-size: 1.6rem;
   box-sizing: border-box;
+  /*background: #1B1B1B;*/
+  background: F8F8FF;
+  font-family: "tbody" ,sans-serif;
 }
+
+
+
+li { list-style: none; }
+a { text-decoration: none; color: black; }
+
+
+
+h1,.h1 { font-family: "heading";  font-size: 96px }
+h2,.h2 { font-family: "heading";  font-size: 60px }
+h3,.h3 { font-family: "heading";  font-size: 48px }
+h4,.h4 { font-family: "heading";  font-size: 34px }
+h5,.h5 { font-family: "heading";  font-size: 24px }
+h6,.h6 { font-family: "heading";  font-size: 20px }
+
+
+.body1,p,span,label { font-family: "tbody"; font-size: 16px }
+.body2 { font-family: "tbody"; font-size: 14px }
+.subtitle1 { font-family: "tbody"; font-size: 16px }
+.subtitle2 { font-family: "tbody"; font-size: 14px }
+.button,button { font-family: "tbody"; font-size: 14px }
+.overline { font-family: "tbody"; font-size: 10px }
+.caption { font-family: "tbody"; font-size: 12px }
+
+
+
+.button,button { text-transform: uppercase; font-weight: bold; }
+.overline { text-transform: uppercase; }
+
+
+main {
+  min-width: 70rem;
+  height: auto;
+  padding-bottom: 10rem;
+}
+

@@ -1,0 +1,36 @@
+
+
+
+
+
+.container {
+  height: 7rem;
+	width: 100%;
+	box-shadow: 0 1px 4px grey;
+}
+.group {
+	height: 100%;
+	width: 90%;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+.link {
+  height: 100%;
+  display: flex;
+  
+  align-items: center;
+  padding: 0rem 1rem;
+  font-weight: bold;
+}
+.link:hover {
+  color: dimgray;
+}
+.link_logo {
+  font-family: tbody;
+	font-weight: bold;
+}
+.links {
+	display: flex;
+}
